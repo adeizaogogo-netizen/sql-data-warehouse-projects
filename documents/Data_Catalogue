@@ -1,1 +1,49 @@
-			
+1. gold.dim_products
+
+Purpose:
+|Column_name       |Type              |Nullable     |Description|
+|------------------|------------------|-------------|-----------|
+|product_key       |BIGINT            |YES          |Surrogate key uniquely identifying the product record in the dimension table|
+|product_id        |INT               |YES          |Unique identifier assigned to each product by the business for internal referencing and tracking|
+|product_number    |NVARCHAR (50)     |YES          |A structured alphanumeric code for product assigned by the business for categorization or inventory|
+|product_name      |NVARCHAR (50)     |YES          |Descriptive name of the product including key details like color, type and size|
+|category_id       |NVARCHAR (50)     |YES          |Unique identifier of the product category from the system|
+|category          |NVARCHAR (50)     |YES          |High-level product category description (e.g., Bikes, Accessories) used for grouping related items|
+|subcategory       |NVARCHAR (50)     |YES          |Lower-level classification within the product category (e.g. Mountain Bikes, Lights)|
+|maintenance       |NVARCHAR (50)     |YES          |Maintenance requirement classification for the product (e.g. Yes, No)|
+|cost              |INT               |YES          |The base cost of the product|
+|product_line      |NVARCHAR (50)     |YES          |The product line or family the product belongs to (e.g. Touring, Other Sales|
+|product_start_date|DATE              |YES          |The date the product became active or available for sale|
+
+
+2. gold.dim_customers
+
+Purpose:
+|Column_name       |Type              |Nullable     |Description|
+|------------------|------------------|-------------|-----------|
+|customer_key      |BIGINT            |YES          |Surrogate key uniquely identifying the customer record in the dimension table|
+|customer_id       |INT               |YES          |Unique identifier assigned to each customer by the business|
+|customer_number   |NVARCHAR (50)     |YES          |Alphanumeric customer reference number for referencing and tracking|
+|first_name        |NVARCHAR (50)     |YES          |The customer’s first name as recorded in the system|
+|last_name         |NVARCHAR (50)     |YES          |The customer’s last name as recorded in the system|
+|country           |NVARCHAR (50)     |YES          |The country of residence of the customer (e.g.'Canada')|
+|marital_status    |NVARCHAR (50)     |YES          |The marital status of the customer (e.g. 'Married', 'Single')|
+|birth_date        |DATE              |YES          |The customer’s date of birth|
+|gender            |NVARCHAR (50)     |YES          |The gender of the customer (e.g. 'Male', 'Female')|
+|create_date       |DATE              |YES          |The date the customer record was created in the system formatted as YYYY-MM-DD (e.g. 2012-01-31)|
+
+
+3.gold.fact_sales
+
+Purpose:
+|Column_name       |Type              |Nullable     |Description|
+|------------------|------------------|-------------|-----------|
+|order_number      |NVARCHAR (50)     |YES          |A unique alphanumeric identifier of each sales order used for tracking (e.g. SO64249)|
+|product_key       |BIGINT            |YES          |Surrogate key linking the order to the product dimension table|
+|customer_key      |BIGINT            |YES          |Surrogate key linking the order to the customer dimension table|
+|order_date        |DATE              |YES          |The date when  the order was placed|
+|shipping_date     |DATE              |YES          |The date when the order was shipped to the customer|
+|due_date          |DATE              |YES          |The date when the payment for the order was due|
+|sales_amount      |INT               |YES          |The total monetary value of the sale the order line item in whole number currency units (e.g. 25)|
+|quantity          |INT               |YES          |The number of units of the product ordered per line item (e.g. 1)|
+|price             |INT               |YES          |The price per unit of the product for the order line item in whole number  currency units  (e.g. 5)|
