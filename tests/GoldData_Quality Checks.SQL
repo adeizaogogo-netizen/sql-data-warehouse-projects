@@ -1,4 +1,16 @@
+/*
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+QUALITY CHECKS
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Script Purpose:
+The scripts below perform quality checks to validate the integrity, consistency and accuracy of the gold layer. These checks ensure
+1. Uniqueness of the surrogate keysin dimension tables
+2. Referential integrity between the fact and dimension tables
+3. Validation of the relationships between the data model for analytical purposes
+- Run these checks after data loading the silver layer
+- Investigate and resolve any issues that come up during the checks
 
+*/
 
 --------------------------------------------------------------------------------------------
 --check for uniqueness of customer key, 
@@ -15,7 +27,7 @@ HAVING   COUNT(*) > 1;
 
 
 --------------------------------------------------------------------------------------------
---check that  final table is okay and that the surrogate keys are unique and don't overlap
+--check the data model connectivity between fact and dimensions
 --foreign key integrity (dimensions)
 
 select * from gold.fact_sales AS f 
