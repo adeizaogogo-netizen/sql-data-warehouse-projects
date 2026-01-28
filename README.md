@@ -4,8 +4,6 @@ Welcome to the ** Data Warehouse and Analytics Project** repository.
 This project uses industry best pratices in data engineering and analytics in building a modern data warehouse with SQL Server, including ETL processes, data modeling and analytics. It demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-https://www.markdownguide.org/basic-syntax/
-https://guides.github.com/features/mastering-markdown/
 
 ## Project Overview
 
@@ -33,3 +31,5 @@ This repository demonstrates Skills/ expertise in the following areas:
 - DrawIO:
 - Notion: All-in-one tool for project management and organization
 - <a href="https://www.flaticon.com/free-icons/data-analytics" title="data analytics icons">Data analytics icons created by Freepik - Flaticon</a>
+- https://www.markdownguide.org/basic-syntax/
+- https://guides.github.com/features/mastering-markdown/
