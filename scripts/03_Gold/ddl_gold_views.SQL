@@ -1,7 +1,21 @@
+/* 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                               DDL SCRIPT: CREATE GOLD VIEWS
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+This script creates views for the Gold layer in the the data warehouse. The goldlayer represents the final dimension
+and fact tables (star schema)
+Each view performs transformations and combines data from the silver layer to provide a clean, enriched and business
+-ready dataset.
 
+Usage:
+These views can be queried directly for analytics and reporting
 
--------------------------------------------------------------------------------------------------
+*/
+
+-----------------------------------------------------------------------------------------------------
+-- Create Dimension: gold.dim_customers
+-----------------------------------------------------------------------------------------------------
 
 CREATE VIEW gold.dim_customers AS 
 SELECT 
@@ -32,8 +46,9 @@ Rename the columns using the naming convention outlined in documentation
 
 */
 
-----------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------------
+-- Create Dimension: gold.dim_products
+-----------------------------------------------------------------------------------------------------
 
 
 CREATE OR ALTER VIEW gold.dim_products AS
@@ -59,7 +74,10 @@ WHERE  prd_end_dt IS NULL;                          -- filter out most recent (c
  
 
 
-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-- Create Fact: gold.fact_sales
+-----------------------------------------------------------------------------------------------------
+
 CREATE VIEW  gold.fact_sales AS
 SELECT            sd.sls_ord_num AS order_number,
                   pr.product_key,
