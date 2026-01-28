@@ -22,7 +22,7 @@ This repository demonstrates Skills/ expertise in the following areas:
 - ETL Pipeline Development
 - Data modeling
 - Data Analytics
-- <a href="https://www.flaticon.com/free-icons/data-analytics" title="data analytics icons">Data analytics icons created by Freepik - Flaticon</a>
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Important Links & Tools 
 
@@ -32,4 +32,4 @@ This repository demonstrates Skills/ expertise in the following areas:
 - Git repository: set up a partial 
 - DrawIO:
 - Notion: All-in-one tool for project management and organization
-
+- <a href="https://www.flaticon.com/free-icons/data-analytics" title="data analytics icons">Data analytics icons created by Freepik - Flaticon</a>
