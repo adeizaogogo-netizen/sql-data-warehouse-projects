@@ -5,7 +5,7 @@ This project uses industry best pratices in data engineering and analytics in bu
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Project Overview
+##https://github.com/adeizaogogo-netizen/sql-data-warehouse-projects/blob/main/images/detail.png Project Overview
 
 This project involves the following:
 1. Data Architecture - designing a modern data warehouse using the medallion architecture bronze, silver and gold layers
