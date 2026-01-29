@@ -7,7 +7,6 @@ This project uses industry best pratices in data engineering and analytics in bu
 
 ## Project Overview
 
-
 This project involves the following:
 1. Data Architecture - designing a modern data warehouse using the medallion architecture bronze, silver and gold layers
 2. ETL Pipelines - Extracting Transforming and Loading data from the source systems into the warehouse
@@ -26,11 +25,11 @@ This repository demonstrates Skills/ expertise in the following areas:
 ## Important Links & Tools 
 
 - [Datasets:](https://cnn.com) Access is free for all the project datasets [csv files] 
-- SQL Server Express: Lightweight server for hosting SQL database
-- SQL Server Management Studio (SSMS): GUI for managing and interacting with the databases
-- Git repository: set up a partial 
-- DrawIO:
-- Notion: All-in-one tool for project management and organization
-- <a href="https://www.flaticon.com/free-icons/data-analytics" title="data analytics icons">Data analytics icons created by Freepik - Flaticon</a>
+- [SQL Server Express: ](https://www.microsoft.com/en-us/download/details.aspx?id=101064) Lightweight server for hosting SQL database
+- [SQL Server Management Studio (SSMS):](https://learn.microsoft.com/en-us/ssms/install/install) GUI for managing and interacting with the databases
+- [Git repository:](https://github.com/) Setup a Git account and repository to manage, version, and collaborate on your code efficiently
+- [DrawIO:](https://app.diagrams.net/) Online diagramming application for creating flowcharts, UML, entity relation, network diagrams, mockups and more
+- [Notion: ](https://app.diagrams.net/) All-in-one tool for project management and organization
 - https://www.markdownguide.org/basic-syntax/
 - https://guides.github.com/features/mastering-markdown/
+- https://www.flaticon.com/
