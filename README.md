@@ -66,4 +66,9 @@ The data architecture for this project follows the Medallion Architecture **Bron
 <img width="1237" height="818" alt="Image" src="https://github.com/user-attachments/assets/76a5444e-f226-41ba-a695-e30111653dbe" />
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+## Repository Structure
+
+
+
 
