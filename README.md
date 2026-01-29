@@ -32,6 +32,7 @@ This repository demonstrates Skills/ expertise in the following areas:
 - https://www.markdownguide.org/basic-syntax/
 - https://guides.github.com/features/mastering-markdown/
 - https://www.flaticon.com/
+- https://www.readmecodegen.com/file-tree/github-file-tree-visualizer
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Project Requirements
@@ -52,9 +53,9 @@ Develop a modern data warehouse with SQL Server, including ETL processes, data m
 
 #### Objective
 
-**- Customer Behaviour**
-**- Product Performance**
-**- Sales Trends**
+**- Customer Behaviour**<br>
+**- Product Performance**<br>
+**- Sales Trends**<br>
 
 These insights empower stakeholders with key business metrics, enablingstrateic decision making
 
@@ -70,5 +71,37 @@ The data architecture for this project follows the Medallion Architecture **Bron
 ## Repository Structure
 
 
+```
 
+sql-data-warehouse-projects/
+    ├── datasets/                                  # Raw data sets used for the project (CRM and ERP)
+    ├── documents/                                 # 
+    │   ├── Data Flow Diagram_DrawIO.drawio        #
+    │   ├── Data Integration Model_DrawIO.drawio   #
+    │   ├── Data Mart.drawio                       #
+    │   ├── Data_Catalogue                         #
+    │   ├── Project Architecture_DrawIO.pdf        #
+    ├── images/                                    #
+    │   ├── external-link.png
+    ├── scripts/                                   #
+    │   ├── 01_Bronze/                             #
+    │   ├── 02_Silver/                             #
+    │   ├── 03_Gold/                               #
+    ├── tests/
+    │   ├── CleanData_Quality Checks.SQL           #
+    │   └── GoldData_Quality Checks.SQL            #
+    └── README.md
+
+```
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+## License
+
+This project is licensed under the MIT license. You are therefore free to use, share and modify with proper attribution.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+# About Me
+
+Hello There! Iam Jacob Ogogo (Jake)
 
