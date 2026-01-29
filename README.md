@@ -4,7 +4,6 @@ Welcome to the ** Data Warehouse and Analytics Project** repository.
 This project uses industry best pratices in data engineering and analytics in building a modern data warehouse with SQL Server, including ETL processes, data modeling and analytics. It demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-
 ## Project Overview
 
 This project involves the following:
@@ -33,3 +32,34 @@ This repository demonstrates Skills/ expertise in the following areas:
 - https://www.markdownguide.org/basic-syntax/
 - https://guides.github.com/features/mastering-markdown/
 - https://www.flaticon.com/
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+## Project Requirements
+
+### Building the Data Warehouse
+
+#### Objective
+Develop a modern data warehouse with SQL Server, including ETL processes, data modeling to consolidate sales data thus enabling analytical reporting and informed decision making.
+
+**Data Sources:** Import data from two source systems (CRM and ERP) provided as csv files
+**Data Quality:** Cleanse and resolve data quality issues prior to analysis
+**Integration:** Combine both sources into a single, user friendly data model designed for analytical queries
+**Scope:** Focus on the latest dataset only - historization of details not required
+**Documentation:** Provide clear documentation of the data to support business stakeolders and analytics teams
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+## BI: Analytics and Reporting
+
+#### Objective
+
+**- Customer Behaviour**
+**- Product Performance**
+**- Sales Trends**
+
+These insights empower stakeholders with key business metrics, enablingstrateic decision making
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+## Data Architecture
+
+The data architecture for this project follows the Medallion Architecture **Bronze, Silver** and **Gold layers**
+
