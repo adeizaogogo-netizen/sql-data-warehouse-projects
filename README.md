@@ -75,22 +75,24 @@ The data architecture for this project follows the Medallion Architecture **Bron
 
 sql-data-warehouse-projects/
     ├── datasets/                                  # Raw data sets used for the project (CRM and ERP)
-    ├── documents/                                 # 
-    │   ├── Data Flow Diagram_DrawIO.drawio        #
-    │   ├── Data Integration Model_DrawIO.drawio   #
-    │   ├── Data Mart.drawio                       #
-    │   ├── Data_Catalogue                         #
-    │   ├── Project Architecture_DrawIO.pdf        #
-    ├── images/                                    #
-    │   ├── external-link.png
-    ├── scripts/                                   #
-    │   ├── 01_Bronze/                             #
-    │   ├── 02_Silver/                             #
-    │   ├── 03_Gold/                               #
+    ├── documents/                                 # Key documents used in this project
+    │   ├── Data Flow Diagram_DrawIO.drawio        # Data flow diagram for this project in draw.io format
+    │   ├── Data Integration Model_DrawIO.drawio   # Data integration model for this project depicting related fields in differnt bronze layer tables used for joining
+    │   ├── Data Mart.drawio                       # Data mart (star schema) showing database relationship and primary keys
+    │   ├── Data_Catalogue                         # Data catalogue of the different columns in the dimension and fact tables with description
+    │   ├── Project Architecture_DrawIO.pdf        # Project architecture depicting the bronze, silver and gold layers in draw.io format
+    ├── images/                                    # image folder
+    │   ├── external-link.png                      # Sample image 
+    ├── scripts/                                   # SQL scripts used for extraction and transformation
+    │   ├── 01_Bronze/                             # Scripts for extracting and loading raw data
+    │   ├── 02_Silver/                             # Scripts for cleaning and transforming data
+    │   ├── 03_Gold/                               # Scripts for creating analytical models
     ├── tests/
-    │   ├── CleanData_Quality Checks.SQL           #
-    │   └── GoldData_Quality Checks.SQL            #
-    └── README.md
+    │   ├── CleanData_Quality Checks.SQL           # Scripts for testing & quality checks in Silver and bronze layers 
+    │   └── GoldData_Quality Checks.SQL            # Scripts for testing & quality checks in Gold 
+    └── README.md                                  # Project overview and instructions
+    └── LICENSE.md                                 # License information for the repository
+
 
 ```
 
