@@ -99,7 +99,7 @@ sql-data-warehouse-projects/
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ## License
 
-This project is licensed under the MIT license. You are therefore free to use, share and modify with proper attribution.
+This project is licensed under the [MIT license](LICENSE). You are therefore free to use, share and modify with proper attribution.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
